@@ -1,3 +1,38 @@
+body {
+    width: 1440px;
+    margin: 0 auto;
+    background-color: #249EA0;
+}
+
+* {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+    box-sizing: border-box;
+    text-decoration: none;
+
+}
+
+.logo img {
+    width: 100px;
+    height: 100px;
+}
+
+.home-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1px 15px;
+    background-color: #005F60;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
 
 #menu-toggle {
     display: none;
@@ -17,7 +52,7 @@
     left: 0;
     right: 0;
     height: 3px;
-    background-color: #F0F;
+    background-color: #249EA0;
 }
 
 .hamburger span:nth-child(1) {
@@ -38,7 +73,7 @@
     right: -300;
     width: 300px;
     height: 100%;
-    background-color: #F0F;
+    background-color: #005F60;
     color: #fff;
 }
 
@@ -57,10 +92,121 @@
     text-decoration: none;
 }
 
-#menu-toggle:checked ~ .menu {
+#menu-toggle:checked~.menu {
     left: 0;
 }
 
+.small-btn {
+    display: flex;
+    width: 300px;
+    height: 40px;
+    padding: 27px 46px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    flex-shrink: 0;
+    font-weight: 700;
+    font-size: 25px;
+    border-radius: 25px;
+    background: #FD5901;
+}
+.big-btn{
+        display: flex;
+    width: 500px;
+    height: 40px;
+    padding: 27px 46px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    flex-shrink: 0;
+    font-weight: 700;
+    font-size: 25px;
+    border-radius: 25px;
+    background: #FD5901;
+}
 
+.hero {
+    background-image: url("/Images/hero.jpg");
+    width: 1440px;
+    height: 551px;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    align-items: center;
 
-    
+}
+
+.hero-offer {
+    margin-left: 20px;
+    display: flex;
+    width: 407px;
+    height: 503px;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    gap: 30px;
+    flex-shrink: 0;
+    border-radius: 25px;
+    background-color: #FFFFFF4D;
+}
+
+.hero-offer section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    padding: 20px 40px;
+    width: 367px;
+    height: 283px;
+}
+
+.hero-offer section h1 {
+    font-weight: 700;
+    font-size: 40px;
+    color: #FFFFFF;
+    text-align: center;
+    -webkit-text-stroke-width: .5px;
+    -webkit-text-stroke-color: #000;
+}
+
+.hero-offer section p {
+    margin-top: 10px;
+    font-weight: 400;
+    font-size: 20px;
+    color: #FFFFFF;
+    text-align: justify;
+    -webkit-text-stroke-width: .1px;
+    -webkit-text-stroke-color: #000;
+}
+.hero-offer button {
+    margin-bottom: 20px;
+    border: none;
+    cursor: pointer;
+}
+.subscription {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+    padding: 40px 0;
+}
+.why-legend
+{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+
+}
+.coaches
+{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
