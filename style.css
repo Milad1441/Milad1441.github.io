@@ -1,98 +1,91 @@
+/* ====== Google Font ====== */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=BBH+Sans+Bogle&display=swap');
+
+
+/* ====== Global Styles ====== */
+* {
+    font-family: "BBH Sans Bogle", sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
 body {
+
     width: 1440px;
     margin: 0 auto;
     background-color: #249EA0;
+    color: #fff;
+    line-height: 1.6;
+    overflow-x: hidden;
 }
 
-* {
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
-    list-style-type: none;
-    box-sizing: border-box;
-    text-decoration: none;
-
-}
-
-.logo img {
-    width: 100px;
-    height: 100px;
-}
-
+/* ====== Header ====== */
 .home-header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 1px 15px;
-    background-color: #005F60;
+    background-color: #1c7d7d;
+    padding: 12px 40px;
+}
+
+.logo img {
+    width: 70px;
 }
 
 .navbar {
     display: flex;
-    justify-content: space-between;
+    list-style: none;
+    gap: 20px;
     align-items: center;
 }
 
-#menu-toggle {
-    display: none;
+.navbar a {
+    text-transform: uppercase;
+    text-decoration: none;
+    color: #fff;
+    font-weight: 500;
+    transition: 0.3s;
 }
 
-.hamburger {
-    position: relative;
-    display: inline-block;
-    width: 30px;
-    height: 20px;
+.navbar a:hover {
+    color: #ff9933;
+}
+
+.navbar i {
+    color: #fff;
+    font-size: 20px;
     cursor: pointer;
 }
 
-.hamburger span {
-    position: absolute;
-    border-radius: 35px;
-    left: 0;
-    right: 0;
-    height: 3px;
-    background-color: #249EA0;
+/* ====== Hero Section ====== */
+.hero {
+    background: url('Images/hero.jpg') center/cover no-repeat;
+    height: 70vh;
+    display: flex;
+    align-items: center;
+    padding: 50px;
 }
 
-.hamburger span:nth-child(1) {
-    top: 0;
+.hero-offer {
+    background: rgba(0, 0, 0, 0.6);
+    padding: 25px;
+    border-radius: 15px;
+    max-width: 400px;
+    height: 500px;
 }
 
-.hamburger span:nth-child(2) {
-    top: 8.5px;
-}
-
-.hamburger span:nth-child(3) {
-    bottom: 0;
-}
-
-.menu {
-    position: absolute;
-    top: 0;
-    right: -300;
-    width: 300px;
-    height: 100%;
-    background-color: #005F60;
+.hero-offer h1 {
+    font-size: 2rem;
     color: #fff;
 }
 
-.menu ul {
-    list-style-type: none;
-    padding: 0;
-    margin: 0;
-}
-
-.menu ul li {
-    padding: 10px;
-}
-
-.menu ul li a {
-    color: #fff;
-    text-decoration: none;
-}
-
-#menu-toggle:checked~.menu {
-    left: 0;
+.hero-offer p {
+    margin: 10px 0 20px;
+    color: #f0f0f0;
 }
 
 .small-btn {
@@ -108,9 +101,13 @@ body {
     font-weight: 700;
     font-size: 25px;
     border-radius: 25px;
-    background: #FD5901;
+    background: linear-gradient(90deg, #008083, #ff6600);
     border: none;
     cursor: pointer;
+}
+
+.small-btn:hover {
+    background: linear-gradient(90deg, #ff6600, #cc5200);
 }
 
 .big-btn {
@@ -126,73 +123,16 @@ body {
     font-weight: 700;
     font-size: 25px;
     border-radius: 25px;
-    background: #FD5901;
+    background: linear-gradient(90deg, #008083, #ff6600);
     border: none;
     cursor: pointer;
 }
 
-.hero {
-    background-image: url("/Images/hero.jpg");
-    width: 1440px;
-    height: 551px;
-    background-position: center;
-    background-size: cover;
-    background-repeat: no-repeat;
-    display: flex;
-    align-items: center;
-
+.big-btn:hover {
+    background: linear-gradient(90deg, #ff6600, #cc5200);
 }
 
-.hero-offer {
-    margin-left: 20px;
-    display: flex;
-    width: 407px;
-    height: 503px;
-    flex-direction: column;
-    justify-content: space-between;
-    align-items: center;
-    gap: 30px;
-    flex-shrink: 0;
-    border-radius: 25px;
-    background-color: #FFFFFF4D;
-}
-
-.hero-offer section {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    gap: 20px;
-    padding: 20px 40px;
-    width: 367px;
-    height: 283px;
-}
-
-.hero-offer section h1 {
-    font-weight: 700;
-    font-size: 40px;
-    color: #FFFFFF;
-    text-align: center;
-    -webkit-text-stroke-width: .5px;
-    -webkit-text-stroke-color: #000;
-}
-
-.hero-offer p {
-    margin-top: 10px;
-    font-weight: 400;
-    font-size: 20px;
-    color: #FFFFFF;
-    text-align: justify;
-    -webkit-text-stroke-width: .1px;
-    -webkit-text-stroke-color: #000;
-}
-
-.hero-offer button {
-    margin-bottom: 20px;
-    border: none;
-    cursor: pointer;
-}
-
+/* ====== Diet Section (Fixed Design) ====== */
 .diet {
     justify-self: center;
     border-radius: 25px;
@@ -208,7 +148,7 @@ body {
     flex-shrink: 0;
 }
 
-.diet h1 {
+.diet strong {
     display: flex;
     height: 52px;
     flex-direction: column;
@@ -251,10 +191,20 @@ body {
     background: url(<path-to-image>) lightgray 50% / cover no-repeat;
 }
 
+.dietpic {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+}
+
+
+/* ====== Subscription Plans ====== */
 .subscription {
     width: 1400px;
     display: flex;
     flex-direction: row;
+    justify-self: center;
     justify-content: space-between;
     align-items: center;
     gap: 20px;
@@ -264,14 +214,14 @@ body {
 
 .subscription section {
     display: flex;
-    justify-content: flex-start;
+    justify-content: space-between;
     flex-direction: column;
     align-items: center;
     gap: 20px;
     justify-items: center;
     border-radius: 25px;
     width: 375px;
-    height: 714px;
+    height: 720px;
     flex-shrink: 0;
     background-color: #FAAB36E5;
     border: #FD5901 5px solid;
@@ -288,6 +238,27 @@ body {
     margin-top: 40px;
     /* 40px */
 }
+.subscription h3.trik {
+    color: #000;
+    text-align: center;
+    font-family: Inter;
+    font-size: 27px;
+    font-style: normal;
+    font-weight: 900;
+    line-height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    border-radius: 30px;
+    border-color: #F0F;
+    border-style: hidden;
+    border-width: medium;
+    width: 373px;
+    height: 50px;
+    flex-shrink: 0;
+    float: none;
+    z-index: 1;
+}
 
 .subscription p {
     color: #000;
@@ -302,34 +273,12 @@ body {
 }
 
 .subscription button {
-    
-    
-    
     margin-top: auto;
     margin-bottom: 10px;
 }
 
 #best-deal {
     color: #000;
-    text-align: center;
-    font-family: Inter;
-    font-size: 27px;
-    font-style: normal;
-    font-weight: 900;
-    line-height: 100%;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    flex-shrink: 0;
-    border-radius: 30px;
-    border: 3px solid #FD5901;
-    width: 373px;
-    height: 50px;
-    flex-shrink: 0;
-}
-.trik
-{
-
     text-align: center;
     font-family: Inter;
     font-size: 27px;
@@ -343,106 +292,149 @@ body {
     flex-direction: column;
     justify-content: center;
     flex-shrink: 0;
+    border-radius: 30px;
+    border: 3px solid #FD5901;
     width: 373px;
     height: 50px;
     flex-shrink: 0;
+    word-spacing: .1em;
+    text-indent: 1rem;
+    line-height: 1rem;
+    letter-spacing: .1em;
 }
 
+/* ====== Why Legend Section ====== */
 .why-legend {
-    width: 1400px;
     display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
-    margin-top: 100px;
-
-}
-
-.why-legend p {
-    display: flex;
-    height: 317px;
-    flex-direction: column;
     justify-content: center;
-    align-self: stretch;
-    color: #000;
-    font-family: Inter;
-    font-size: 30px;
-    font-style: normal;
-    font-weight: 500;
-    line-height: 100%;
-    /* 40px */
-    letter-spacing: 2px;
+    align-items: center;
+    gap: 30px;
+    padding: 50px;
+    background-color: #34baba;
+    border-radius: 15px;
+    flex-wrap: wrap;
 }
 
 .why-legend h1 {
-    display: flex;
-    height: 55px;
-    flex-direction: column;
-    justify-content: center;
-    align-self: stretch;
-    color: #FD5901;
-    -webkit-text-stroke-width: 2px;
-    -webkit-text-stroke-color: #000;
-    font-family: var(--String, Inter);
-    font-size: 65px;
-    font-style: italic;
-    font-weight: 800;
-    line-height: 100%;
-    /* 65px */
+    color: #ff6600;
+    margin-bottom: 10px;
+}
+
+.why-legend p {
+    color: #fff;
+    max-width: 500px;
 }
 
 .why-legend img {
-    width: 417px;
-    height: 417px;
-    flex-shrink: 0;
-    border-radius: 25px;
-    border: 3px solid #FD5901;
-    background: url(<path-to-image>) lightgray 50% / cover no-repeat;
+    width: 280px;
+    border-radius: 15px;
 }
 
+/* ====== Coaches Section ====== */
 .coaches {
-    width: 1400px;
     display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
-    margin-top: 100px;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 25px;
+    flex-wrap: wrap;
+    margin: 50px auto;
+    max-width: 1000px;
 }
 
 .coaches section {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    margin-top: 40px;
-    gap: 40px;
-    padding: 20px 40px;
-    width: 367px;
-    height: 503px;
-}
-
-.coaches p {
-    color: #000;
+    background: rgba(255, 255, 255, 0.15);
+    border-radius: 15px;
+    padding: 20px;
+    max-width: 280px;
     text-align: center;
-    font-family: Inter;
-    font-size: 25px;
-    font-style: normal;
-    font-weight: 500;
-    line-height: 140%;
-    /* 35px */
 }
 
 .coaches img {
-    height: 375px;
-    align-self: stretch;
-    border-radius: 25px;
-    border: 3px solid #FD5901;
-    background: url(<path-to-image>) lightgray 50% / cover no-repeat;
+    width: 100%;
+    border-radius: 15px;
+    margin-bottom: 15px;
 }
 
+/* ====== Footer ====== */
 footer {
-    margin-top: 100px;
-    width: 1440px;
-    height: 200px;
-    background-color: #005F60;
+    background-color: #1c7d7d;
+    padding: 20px 0;
+    text-align: center;
+    color: #fff;
+    font-size: 0.9rem;
+}
+
+/* ====== Responsive Design (Mobile) ====== */
+@media (max-width: 768px) {
+    .home-header {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .navbar {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .hero {
+        height: 55vh;
+        padding: 20px;
+        justify-content: center;
+    }
+
+    .hero-offer {
+        width: 90%;
+        text-align: center;
+    }
+
+    /* Diet section on mobile */
+    .diet {
+        flex-direction: column;
+        width: 90%;
+    }
+
+    .diet img {
+        width: 100%;
+        border-radius: 15px 15px 0 0;
+    }
+
+    .diet section {
+        width: 100%;
+        text-align: center;
+        padding: 20px;
+    }
+
+    /* Subscription */
+    .subscription {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .subscription section {
+        width: 90%;
+    }
+
+    /* Why legend */
+    .why-legend {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .why-legend img {
+        width: 80%;
+    }
+
+    /* Coaches */
+    .coaches {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .coaches section {
+        width: 90%;
+    }
+
+    footer {
+        font-size: 0.8rem;
+    }
 }
