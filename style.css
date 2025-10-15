@@ -31,7 +31,6 @@ body {
     display: flex;
     justify-content: space-between;
     align-items: center;
-
 }
 
 #menu-toggle {
@@ -110,11 +109,14 @@ body {
     font-size: 25px;
     border-radius: 25px;
     background: #FD5901;
+    border: none;
+    cursor: pointer;
 }
-.big-btn{
-        display: flex;
-    width: 500px;
-    height: 40px;
+
+.big-btn {
+    display: flex;
+    width: 800px;
+    height: 60px;
     padding: 27px 46px;
     flex-direction: column;
     justify-content: center;
@@ -125,6 +127,8 @@ body {
     font-size: 25px;
     border-radius: 25px;
     background: #FD5901;
+    border: none;
+    cursor: pointer;
 }
 
 .hero {
@@ -173,7 +177,7 @@ body {
     -webkit-text-stroke-color: #000;
 }
 
-.hero-offer section p {
+.hero-offer p {
     margin-top: 10px;
     font-weight: 400;
     font-size: 20px;
@@ -182,31 +186,263 @@ body {
     -webkit-text-stroke-width: .1px;
     -webkit-text-stroke-color: #000;
 }
+
 .hero-offer button {
     margin-bottom: 20px;
     border: none;
     cursor: pointer;
 }
+
+.diet {
+    justify-self: center;
+    border-radius: 25px;
+    border: 3px solid #FD5901;
+    background: #FAAB36E5;
+    display: flex;
+    width: 1400px;
+    height: 480px;
+    padding: 24px 47px;
+    margin-top: 100px;
+    align-items: center;
+    gap: 63px;
+    flex-shrink: 0;
+}
+
+.diet h1 {
+    display: flex;
+    height: 52px;
+    flex-direction: column;
+    justify-content: center;
+    align-self: stretch;
+    color: #FD5901;
+    -webkit-text-stroke-width: 2px;
+    -webkit-text-stroke-color: #000;
+    font-family: Inter;
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 120%;
+    /* 48px */
+    letter-spacing: 2px;
+}
+
+.diet p {
+    display: flex;
+    width: 706px;
+    height: 241px;
+    flex-direction: column;
+    justify-content: center;
+    color: #000;
+    font-family: Inter;
+    font-size: 30px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 120%;
+    /* 36px */
+    letter-spacing: 1.5px;
+}
+
+.diet img {
+    width: 417px;
+    height: 417px;
+    flex-shrink: 0;
+    border-radius: 25px;
+    border: 3px solid #FD5901;
+    background: url(<path-to-image>) lightgray 50% / cover no-repeat;
+}
+
 .subscription {
+    width: 1400px;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
     gap: 20px;
     padding: 40px 0;
+    margin-top: 100px;
 }
-.why-legend
+
+.subscription section {
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    justify-items: center;
+    border-radius: 25px;
+    width: 375px;
+    height: 714px;
+    flex-shrink: 0;
+    background-color: #FAAB36E5;
+    border: #FD5901 5px solid;
+}
+
+.subscription h2 {
+    color: #000;
+    text-align: center;
+    font-family: Inter;
+    font-size: 40px;
+    font-style: italic;
+    font-weight: 800;
+    line-height: 100%;
+    margin-top: 40px;
+    /* 40px */
+}
+
+.subscription p {
+    color: #000;
+    text-align: center;
+    font-family: Inter;
+    font-size: 27px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 100%;
+    align-self: stretch;
+    margin-top: 40px;
+}
+
+.subscription button {
+    
+    
+    
+    margin-top: auto;
+    margin-bottom: 10px;
+}
+
+#best-deal {
+    color: #000;
+    text-align: center;
+    font-family: Inter;
+    font-size: 27px;
+    font-style: normal;
+    font-weight: 900;
+    line-height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    flex-shrink: 0;
+    border-radius: 30px;
+    border: 3px solid #FD5901;
+    width: 373px;
+    height: 50px;
+    flex-shrink: 0;
+}
+.trik
 {
+
+    text-align: center;
+    font-family: Inter;
+    font-size: 27px;
+    font-style: normal;
+    font-weight: 900;
+    line-height: 100%;
+    /* 27px */
+    display: flex;
+    width: 287px;
+    height: 17px;
+    flex-direction: column;
+    justify-content: center;
+    flex-shrink: 0;
+    width: 373px;
+    height: 50px;
+    flex-shrink: 0;
+}
+
+.why-legend {
+    width: 1400px;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
+    margin-top: 100px;
 
 }
-.coaches
-{
+
+.why-legend p {
+    display: flex;
+    height: 317px;
+    flex-direction: column;
+    justify-content: center;
+    align-self: stretch;
+    color: #000;
+    font-family: Inter;
+    font-size: 30px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 100%;
+    /* 40px */
+    letter-spacing: 2px;
+}
+
+.why-legend h1 {
+    display: flex;
+    height: 55px;
+    flex-direction: column;
+    justify-content: center;
+    align-self: stretch;
+    color: #FD5901;
+    -webkit-text-stroke-width: 2px;
+    -webkit-text-stroke-color: #000;
+    font-family: var(--String, Inter);
+    font-size: 65px;
+    font-style: italic;
+    font-weight: 800;
+    line-height: 100%;
+    /* 65px */
+}
+
+.why-legend img {
+    width: 417px;
+    height: 417px;
+    flex-shrink: 0;
+    border-radius: 25px;
+    border: 3px solid #FD5901;
+    background: url(<path-to-image>) lightgray 50% / cover no-repeat;
+}
+
+.coaches {
+    width: 1400px;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
+    margin-top: 100px;
+}
+
+.coaches section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 40px;
+    gap: 40px;
+    padding: 20px 40px;
+    width: 367px;
+    height: 503px;
+}
+
+.coaches p {
+    color: #000;
+    text-align: center;
+    font-family: Inter;
+    font-size: 25px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 140%;
+    /* 35px */
+}
+
+.coaches img {
+    height: 375px;
+    align-self: stretch;
+    border-radius: 25px;
+    border: 3px solid #FD5901;
+    background: url(<path-to-image>) lightgray 50% / cover no-repeat;
+}
+
+footer {
+    margin-top: 100px;
+    width: 1440px;
+    height: 200px;
+    background-color: #005F60;
 }
