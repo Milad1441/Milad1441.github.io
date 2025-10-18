@@ -28,38 +28,49 @@ body {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background-color: #1c7d7d;
-    padding: 12px 40px;
+    background-color: #007E82;
+    padding: 10px 30px;
 }
 
 .logo img {
-    width: 70px;
+    height: 60px;
 }
 
 .navbar {
-    display: flex;
     list-style: none;
-    gap: 20px;
+    display: flex;
+    align-items: center;
+    gap: 30px;
+    margin: 0;
+    padding: 0;
+}
+
+.navbar li a {
+    text-decoration: none;
+    color: #FF6600;
+    font-size: 22px;
+    padding: 8px 20px;
+    border: 1px solid #66B2B2;
+    border-radius: 20px;
+    background-color: #1A9A9D;
+    transition: all 0.3s ease;
+}
+
+.navbar li a:hover {
+    background-color: #33B6B8;
+}
+
+.navbar li i {
+    color: #FF6600;
+    font-size: 36px;
+    cursor: pointer;
+}
+
+nav {
+    display: flex;
     align-items: center;
 }
 
-.navbar a {
-    text-transform: uppercase;
-    text-decoration: none;
-    color: #fff;
-    font-weight: 500;
-    transition: 0.3s;
-}
-
-.navbar a:hover {
-    color: #ff9933;
-}
-
-.navbar i {
-    color: #fff;
-    font-size: 20px;
-    cursor: pointer;
-}
 
 /* ====== Hero Section ====== */
 .hero {
@@ -71,6 +82,8 @@ body {
 }
 
 .hero-offer {
+    display: flex;
+    flex-direction: column;
     background: rgba(0, 0, 0, 0.6);
     padding: 25px;
     border-radius: 15px;
@@ -86,6 +99,12 @@ body {
 .hero-offer p {
     margin: 10px 0 20px;
     color: #f0f0f0;
+}
+
+.hero-offer button {
+    align-self: center;
+    margin-top: auto;
+    margin-bottom: 10px;
 }
 
 .small-btn {
@@ -178,7 +197,6 @@ body {
     font-style: normal;
     font-weight: 500;
     line-height: 120%;
-    /* 36px */
     letter-spacing: 1.5px;
 }
 
@@ -196,6 +214,17 @@ body {
     flex-direction: column;
     align-items: center;
     gap: 10px;
+}
+
+.diet section {
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+    gap: 10px;
+}
+
+.diet button {
+    margin-top: 20px;
 }
 
 
@@ -236,8 +265,8 @@ body {
     font-weight: 800;
     line-height: 100%;
     margin-top: 40px;
-    /* 40px */
 }
+
 .subscription h3.trik {
     color: #000;
     text-align: center;
@@ -285,7 +314,6 @@ body {
     font-style: normal;
     font-weight: 900;
     line-height: 100%;
-    /* 27px */
     display: flex;
     width: 287px;
     height: 17px;
