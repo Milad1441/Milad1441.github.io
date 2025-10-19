@@ -120,13 +120,14 @@ nav {
     font-weight: 700;
     font-size: 25px;
     border-radius: 25px;
-    background: linear-gradient(90deg, #008083, #ff6600);
+    background: linear-gradient(90deg, #ff6600, #cc5200);
     border: none;
     cursor: pointer;
 }
 
 .small-btn:hover {
-    background: linear-gradient(90deg, #ff6600, #cc5200);
+    background: linear-gradient(90deg, #123f3f, #07898b);
+    color: #fff;
 }
 
 .big-btn {
@@ -142,13 +143,14 @@ nav {
     font-weight: 700;
     font-size: 25px;
     border-radius: 25px;
-    background: linear-gradient(90deg, #008083, #ff6600);
+    background: linear-gradient(90deg, #ff6600, #cc5200);
     border: none;
     cursor: pointer;
 }
 
 .big-btn:hover {
-    background: linear-gradient(90deg, #ff6600, #cc5200);
+        background: linear-gradient(90deg, #123f3f, #07898b);
+    color: #fff;
 }
 
 /* ====== Diet Section (Fixed Design) ====== */
@@ -394,75 +396,210 @@ footer {
 
 /* ====== Responsive Design (Mobile) ====== */
 @media (max-width: 768px) {
-    .home-header {
-        flex-direction: column;
-        text-align: center;
+    
+}
+
+/* Diet page */
+/* CONTAINER */
+.container {
+    max-width: 1300px;
+    margin: auto;
+    padding: 30px 20px;
+    text-align: center;
+}
+
+/* HERO */
+.diet-hero h2 {
+    color: #FD5901;
+    font-size: 40px;
+    font-weight: 700;
+    margin-bottom: 20px;
+}
+
+/* IMAGES */
+.image-row {
+    display: flex;
+    gap: 15px;
+    justify-content: space-around;
+}
+
+.image-row img {
+    width: 35%;
+    border: 2px solid #FD5901;
+    border-radius: 15px;
+}
+
+/* TEXT */
+.description {
+    margin: 20px 0;
+    line-height: 1.7;
+    font-size: 30px;
+    margin: 20px 0 40px 0;
+}
+
+.form-intro h3 {
+    color: #FD5901;
+
+    text-align: center;
+    font-family: Inter;
+    font-size: 70px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 100%;
+    margin: 60px 0 40px 0;
+}
+
+/* FORM */
+form {
+    margin-top: 10px;
+    text-align: left;
+}
+
+
+fieldset {
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    padding: 15px;
+    margin-bottom: 18px;
+}
+
+legend {
+    font-weight: 600;
+    padding: 0 8px;
+}
+
+.user-info ul {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 15px 20px;
+    justify-items: space-between;
+    list-style: none;
+    padding-left: 0;
+}
+
+label {
+    font-size: 14px;
+    font-weight: 600;
+    display: block;
+    margin-top: 10px;
+}
+
+input[type="text"],
+input[type="file"] {
+    width: 100%;
+    margin-top: 6px;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+}
+
+/* UPLOAD GRID */
+.upload-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 15px;
+}
+
+/* SUBMIT */
+.submit-area {
+    text-align: center;
+    justify-self: center;
+    margin-top: 10px;
+}
+
+
+/* FOOTER */
+.footer {
+    text-align: center;
+    margin: 25px 0 10px;
+    font-size: 13px;
+}
+
+/* RESPONSIVE */
+@media (max-width: 768px) {
+    /* Container */
+    .container {
+        max-width: 95%;
+        padding: 20px 10px;
     }
 
-    .navbar {
-        flex-wrap: wrap;
+    /* HERO */
+    .diet-hero h2 {
+        font-size: 28px;
+        margin-bottom: 15px;
+    }
+
+    /* IMAGES */
+    .image-row {
+        flex-direction: column;
+        gap: 10px;
         justify-content: center;
-    }
-
-    .hero {
-        height: 55vh;
-        padding: 20px;
-        justify-content: center;
-    }
-
-    .hero-offer {
-        width: 90%;
-        text-align: center;
-    }
-
-    /* Diet section on mobile */
-    .diet {
-        flex-direction: column;
-        width: 90%;
-    }
-
-    .diet img {
-        width: 100%;
-        border-radius: 15px 15px 0 0;
-    }
-
-    .diet section {
-        width: 100%;
-        text-align: center;
-        padding: 20px;
-    }
-
-    /* Subscription */
-    .subscription {
-        flex-direction: column;
         align-items: center;
     }
 
-    .subscription section {
-        width: 90%;
+    .image-row img {
+        width: 100%;
+        max-width: 100%;
+        border-radius: 10px;
+        border: 2px solid #FD5901;
     }
 
-    /* Why legend */
-    .why-legend {
-        flex-direction: column;
-        text-align: center;
+    /* TEXT */
+    .description {
+        font-size: 18px;
+        line-height: 1.5;
+        margin: 15px 0 30px 0;
     }
 
-    .why-legend img {
-        width: 80%;
+    .form-intro h3 {
+        font-size: 40px;
+        margin: 40px 0 30px 0;
     }
 
-    /* Coaches */
-    .coaches {
-        flex-direction: column;
-        align-items: center;
+    /* FORM */
+    form {
+        text-align: left;
+        margin-top: 10px;
     }
 
-    .coaches section {
-        width: 90%;
+    fieldset {
+        padding: 10px;
+        margin-bottom: 15px;
     }
 
-    footer {
-        font-size: 0.8rem;
+    legend {
+        font-size: 14px;
+    }
+
+    .user-info ul {
+        grid-template-columns: 1fr;
+        gap: 10px 0;
+    }
+
+    label {
+        font-size: 12px;
+    }
+
+    input[type="text"],
+    input[type="file"] {
+        padding: 6px;
+    }
+
+    /* UPLOAD GRID */
+    .upload-grid {
+        grid-template-columns: 1fr;
+        gap: 10px;
+    }
+
+    /* SUBMIT */
+    .submit-btn {
+        font-size: 14px;
+        padding: 8px 12px;
+    }
+
+    /* FOOTER */
+    .footer {
+        font-size: 12px;
+        margin: 20px 0 10px 0;
     }
 }
