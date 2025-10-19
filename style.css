@@ -27,7 +27,6 @@ body {
 .home-header {
     display: flex;
     justify-content: space-between;
-    align-items: center;
     background-color: #007E82;
     padding: 10px 30px;
 }
