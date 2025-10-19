@@ -18,7 +18,7 @@ body {
     width: 1440px;
     margin: 0 auto;
     background-color: #249EA0;
-    color: #fff;
+    color: #000;
     line-height: 1.6;
     overflow-x: hidden;
 }
@@ -372,7 +372,7 @@ nav {
 }
 
 .coaches section {
-    background: rgba(255, 255, 255, 0.15);
+    background: #34baba;
     border-radius: 15px;
     padding: 20px;
     max-width: 280px;
@@ -435,6 +435,7 @@ footer {
     line-height: 1.7;
     font-size: 30px;
     margin: 20px 0 40px 0;
+    color: #000;
 }
 
 .form-intro h3 {
@@ -451,6 +452,9 @@ footer {
 
 /* FORM */
 form {
+    background-color: #34baba;
+    padding: 20px 30px;
+    border-radius: 15px;
     margin-top: 10px;
     text-align: left;
 }
