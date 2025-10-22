@@ -118,7 +118,6 @@ nav {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    gap: 10px;
     flex-shrink: 0;
     font-weight: 700;
     font-size: 25px;
@@ -128,7 +127,23 @@ nav {
     cursor: pointer;
 }
 
+
 .small-btn:hover {
+    background: linear-gradient(90deg, #123f3f, #07898b);
+    color: #fff;
+}
+
+.submit-btn {
+    padding: 10px 100px;
+    font-weight: 700;
+    font-size: 25px;
+    border-radius: 25px;
+    background: linear-gradient(90deg, #ff6600, #cc5200);
+    border: none;
+    cursor: pointer;
+}
+
+.submit-btn:hover {
     background: linear-gradient(90deg, #123f3f, #07898b);
     color: #fff;
 }
@@ -505,7 +520,6 @@ input[type="file"] {
 
 /* SUBMIT */
 .submit-area {
-    text-align: center;
     justify-self: center;
     margin-top: 10px;
 }
@@ -522,6 +536,8 @@ input[type="file"] {
         gap: 30px;
         margin: 0;
         padding: 0;
+        width: 100%;
+
     }
 
     .desktop-nav {
@@ -550,7 +566,7 @@ input[type="file"] {
     .menu {
         display: none;
         flex-direction: column;
-        padding: 10px;
+        padding: 20px;
         position: absolute;
         top: 60px;
         right: 30px;
@@ -558,18 +574,22 @@ input[type="file"] {
         border-radius: 8px;
         overflow: hidden;
         height: auto;
-        width: 200px;
+        width: 250px;
+    }
+
+    .menu ul li {
+        width: 100%;
+        text-align: center;
     }
 
     .menu li i {
         color: #FF6600;
-        font-size: 36px;
         cursor: pointer;
     }
 
     .menu a {
+        display: block;
         color: white;
-        padding: 10px;
         text-decoration: none;
         font-size: 22px;
         padding: 8px 20px;
@@ -577,6 +597,7 @@ input[type="file"] {
         border-radius: 20px;
         background-color: #1A9A9D;
         transition: all 0.3s ease;
+        width: 100%;
     }
 
     /* When checkbox is checked → show menu */
@@ -592,4 +613,3 @@ input[type="file"] {
         content: "";
     }
 }
-
