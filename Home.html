@@ -3,7 +3,7 @@
 
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="Milad">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" type="text/css" href="styles.css" />
@@ -16,7 +16,8 @@
         <section class="logo">
             <img src="Images/logo.png" title="logo" alt="Logo">
         </section>
-        <nav>
+
+        <nav class="desktop-nav">
             <ul class="navbar">
                 <li><a href="Contact.html">Contact us</a></li>
                 <li><a href="Exercise.html">Exercise</a></li>
@@ -26,7 +27,26 @@
                 <li><i class="material-icons" style="font-size:36px">person_outline</i></li>
             </ul>
         </nav>
+
+        <section class="burger">
+            <input type="checkbox" id="menu-toggle" />
+            <label for="menu-toggle" class="hamburger">
+                ☰
+            </label>
+
+            <nav class="menu">
+                <ul class="navbar-mobile">
+                    <li><i class="material-icons" style="font-size:36px">person_outline</i></li>
+                    <li><a href="Home.html">Home</a></li>
+                    <li><a href="Diet.html">Diet</a></li>
+                    <li><a href="Coach.html">Coach</a></li>
+                    <li><a href="Exercise.html">Exercise</a></li>
+                    <li><a href="Contact.html">Contact us</a></li>
+                </ul>
+            </nav>
+        </section>
     </header>
+
     <main>
         <header class="hero">
             <aside class="hero-offer">

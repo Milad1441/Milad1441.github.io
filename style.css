@@ -1,6 +1,4 @@
 /* ====== Google Font ====== */
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap');
-
 @import url('https://fonts.googleapis.com/css2?family=BBH+Sans+Bogle&display=swap');
 
 
@@ -34,6 +32,11 @@ body {
 
 .logo img {
     height: 60px;
+}
+
+.burger {
+    display: none;
+    position: relative;
 }
 
 .navbar {
@@ -150,7 +153,7 @@ nav {
 }
 
 .big-btn:hover {
-        background: linear-gradient(90deg, #123f3f, #07898b);
+    background: linear-gradient(90deg, #123f3f, #07898b);
     color: #fff;
 }
 
@@ -395,11 +398,6 @@ footer {
     font-size: 0.9rem;
 }
 
-/* ====== Responsive Design (Mobile) ====== */
-@media (max-width: 768px) {
-    
-}
-
 /* Diet page */
 /* CONTAINER */
 .container {
@@ -512,99 +510,86 @@ input[type="file"] {
     margin-top: 10px;
 }
 
+/* ====== Responsive Design (Mobile) ====== */
 
-/* FOOTER */
-.footer {
-    text-align: center;
-    margin: 25px 0 10px;
-    font-size: 13px;
-}
-
-/* RESPONSIVE */
 @media (max-width: 768px) {
-    /* Container */
-    .container {
-        max-width: 95%;
-        padding: 20px 10px;
-    }
 
-    /* HERO */
-    .diet-hero h2 {
-        font-size: 28px;
-        margin-bottom: 15px;
-    }
-
-    /* IMAGES */
-    .image-row {
+    .navbar-mobile {
+        list-style: none;
+        display: flex;
         flex-direction: column;
-        gap: 10px;
-        justify-content: center;
         align-items: center;
+        gap: 30px;
+        margin: 0;
+        padding: 0;
     }
 
-    .image-row img {
-        width: 100%;
-        max-width: 100%;
-        border-radius: 10px;
-        border: 2px solid #FD5901;
+    .desktop-nav {
+        display: none;
     }
 
-    /* TEXT */
-    .description {
-        font-size: 18px;
-        line-height: 1.5;
-        margin: 15px 0 30px 0;
+    .burger {
+        display: inline-block;
     }
 
-    .form-intro h3 {
-        font-size: 40px;
-        margin: 40px 0 30px 0;
+    /* Hide checkbox */
+    #menu-toggle {
+        display: none;
     }
 
-    /* FORM */
-    form {
-        text-align: left;
-        margin-top: 10px;
-    }
-
-    fieldset {
+    /* Hamburger icon */
+    .hamburger {
+        font-size: 30px;
+        cursor: pointer;
+        user-select: none;
         padding: 10px;
-        margin-bottom: 15px;
+        display: inline-block;
     }
 
-    legend {
-        font-size: 14px;
+    /* Menu styles */
+    .menu {
+        display: none;
+        flex-direction: column;
+        padding: 10px;
+        position: absolute;
+        top: 60px;
+        right: 30px;
+        background-color: #005F60;
+        border-radius: 8px;
+        overflow: hidden;
+        height: auto;
+        width: 200px;
     }
 
-    .user-info ul {
-        grid-template-columns: 1fr;
-        gap: 10px 0;
+    .menu li i {
+        color: #FF6600;
+        font-size: 36px;
+        cursor: pointer;
     }
 
-    label {
-        font-size: 12px;
+    .menu a {
+        color: white;
+        padding: 10px;
+        text-decoration: none;
+        font-size: 22px;
+        padding: 8px 20px;
+        border: 1px solid #66B2B2;
+        border-radius: 20px;
+        background-color: #1A9A9D;
+        transition: all 0.3s ease;
     }
 
-    input[type="text"],
-    input[type="file"] {
-        padding: 6px;
+    /* When checkbox is checked → show menu */
+    #menu-toggle:checked~.menu {
+        display: flex;
     }
 
-    /* UPLOAD GRID */
-    .upload-grid {
-        grid-template-columns: 1fr;
-        gap: 10px;
+    #menu-toggle:checked+.hamburger::after {
+        content: "✖";
     }
 
-    /* SUBMIT */
-    .submit-btn {
-        font-size: 14px;
-        padding: 8px 12px;
-    }
-
-    /* FOOTER */
-    .footer {
-        font-size: 12px;
-        margin: 20px 0 10px 0;
+    .hamburger::after {
+        content: "";
     }
 }
+
