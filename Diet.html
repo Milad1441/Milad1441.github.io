@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" type="text/css" href="styles.css"/>
+    <link rel="stylesheet" type="text/css" href="styles.css" />
     <link rel="icon" type="image/x-icon" href="/Images/logo.png">
     <title>Diet</title>
 </head>
@@ -48,9 +48,9 @@
     </header>
     <main class="container">
 
-        <section class="diet-hero">
-            <h2>Ready to get your first diet??</h2>
-        </section>
+
+        <h2>Ready to get your first diet??</h2>
+
 
         <section class="image-row">
             <img src="Images/Diet1.jpeg" alt="Healthy Food">
@@ -75,23 +75,24 @@
                     <legend>Your Information</legend>
                     <ul>
                         <li>
-                            <label for="name">First Name:*</label>
-                            <input type="text" placeholder="Enter your name" required />
+                            <label for="firstName">First Name:*</label>
+                            <input type="text" id="firstName" name="firstName" placeholder="Enter your name" required />
                         </li>
                         <li>
-                            <label for="last-name">Last Name:</label>
-                            <input type="text" placeholder="Enter your last name" />
+                            <label for="lastName">Last Name:</label>
+                            <input type="text" id="lastName" name="lastName" placeholder="Enter your last name" />
                         </li>
                         <li>
                             <label for="height">Height:*</label>
-                            <input type="text" placeholder="Enter your height" required />
+                            <input type="text" id="height" name="height" placeholder="Enter your height" required />
                         </li>
                         <li>
                             <label for="weight">Weight:*</label>
-                            <input type="text" placeholder="Enter your weight" required />
+                            <input type="text" id="weight" name="weight" placeholder="Enter your weight" required />
                         </li>
                     </ul>
                 </fieldset>
+
 
                 <fieldset class="upload-section">
                     <legend>Your Poses</legend>
@@ -121,9 +122,7 @@
                     </section>
                 </fieldset>
 
-                <section class="submit-area">
-                    <input class="submit-btn" type="submit"></input>
-                </section>
+                <input class="submit-btn" type="submit" value="Submit">
 
             </form>
         </section>

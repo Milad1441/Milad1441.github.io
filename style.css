@@ -103,6 +103,10 @@ nav {
     color: #fff;
 }
 
+.hero-offer h1::first-letter {
+    text-transform: uppercase;
+}
+
 .hero-offer p {
     margin: 10px 0 20px;
     color: #f0f0f0;
@@ -145,6 +149,8 @@ nav {
     background: linear-gradient(90deg, #ff6600, #cc5200);
     border: none;
     cursor: pointer;
+    justify-self: center;
+    margin-top: 10px;
 }
 
 .submit-btn:hover {
@@ -169,6 +175,7 @@ nav {
     background: linear-gradient(90deg, #ff6600, #cc5200);
     border: none;
     cursor: pointer;
+    color: #000;
 }
 
 .big-btn:hover {
@@ -199,8 +206,6 @@ nav {
     justify-content: center;
     align-self: stretch;
     color: #FD5901;
-    -webkit-text-stroke-width: 2px;
-    -webkit-text-stroke-color: #000;
     font-family: Inter;
     font-size: 40px;
     font-style: normal;
@@ -244,7 +249,6 @@ nav {
 .diet section {
     display: flex;
     flex-direction: column;
-    align-items: left;
     gap: 10px;
 }
 
@@ -293,6 +297,7 @@ nav {
 }
 
 .subscription h3.trik {
+    position: relative;
     color: #000;
     text-align: center;
     font-family: Inter;
@@ -427,7 +432,7 @@ footer {
 }
 
 /* HERO */
-.diet-hero h2 {
+.container>h2 {
     color: #FD5901;
     font-size: 40px;
     font-weight: 700;
@@ -494,7 +499,7 @@ legend {
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 15px 20px;
-    justify-items: space-between;
+    justify-content: space-between;
     list-style: none;
     padding-left: 0;
 }
@@ -523,10 +528,44 @@ input[type="file"] {
 }
 
 /* SUBMIT */
-.submit-area {
-    justify-self: center;
-    margin-top: 10px;
+
+
+#cookie-accept {
+    display: none;
 }
+
+.cookie-box {
+    position: fixed;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 9999;
+    width: 320px;
+    background: #333;
+    color: #fff;
+    padding: 18px 20px;
+    border-radius: 10px;
+    font-size: 14px;
+    text-align: center;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.4);
+}
+
+.cookie-btn {
+    display: inline-block;
+    margin-top: 12px;
+    padding: 8px 16px;
+    background: #ff6600;
+    color: #fff;
+    border-radius: 5px;
+    text-decoration: none;
+    cursor: pointer;
+    font-weight: 600;
+}
+
+#cookie-accept:checked+.cookie-box {
+    display: none;
+}
+
 
 /* ====== Responsive Design (Mobile) ====== */
 
