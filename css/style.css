@@ -81,7 +81,7 @@ nav {
 
 /* ====== Hero Section ====== */
 .hero {
-    background: url('/Images/hero.jpg') center/cover no-repeat;
+    background: url('/img/hero.jpg') center/cover no-repeat;
     height: 70vh;
     display: flex;
     align-items: center;
