@@ -116,6 +116,7 @@ nav {
 
 /* ====== Hero Section ====== */
 .hero {
+    width: 100%;
     background: url('/img/hero.jpg') center/cover no-repeat;
     height: 70vh;
     display: flex;
@@ -619,9 +620,7 @@ textarea {
         margin: 0;
         padding: 0;
         width: 100%;
-
     }
-
 
     .desktop-nav {
         display: none;
@@ -683,7 +682,6 @@ textarea {
         width: 100%;
     }
 
-
     /* When checkbox is checked → show menu */
     #menu-toggle:checked~.menu {
         display: flex;
@@ -696,4 +694,39 @@ textarea {
     .hamburger::after {
         content: "";
     }
+
+    .hero-offer {
+        width: 50%;
+        height: 100%;
+    }
+    .navbar {
+        width: auto;
+    }
+    .diet {
+        flex-direction: column;
+        height: auto;
+        width: auto;
+        max-width: 700px;
+    }
+    .diet p{
+        width: auto;
+        height: auto;
+    }
+    .diet img{
+        width: 100%;
+        height: auto;
+    }
+    .big-btn {
+        width: 100%;
+    }
+    body{
+        overflow-x: hidden;
+    }
+    .subscription {
+        flex-direction: column;
+        width: auto;
+
+        height: auto;
+    }
+
 }
