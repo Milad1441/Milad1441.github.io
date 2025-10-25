@@ -22,6 +22,41 @@ body {
     overflow-x: hidden;
 }
 
+form {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 15px;
+}
+
+fieldset {
+    border: 2px solid #FD5901;
+    border-radius: 8px;
+    padding: 18px;
+    margin-bottom: 25px;
+}
+
+legend {
+    color: #FD5901;
+    font-size: 20px;
+    padding: 0 10px;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+ul li {
+    margin-bottom: 18px;
+}
+
+label {
+    display: block;
+    font-size: 17px;
+    margin-bottom: 6px;
+}
+
 /* ====== Header ====== */
 .home-header {
     display: flex;
@@ -176,6 +211,7 @@ nav {
     border: none;
     cursor: pointer;
     color: #000;
+    margin-top: 40px;
 }
 
 .big-btn:hover {
@@ -299,7 +335,7 @@ nav {
     font-size: 27px;
     font-style: normal;
     font-weight: 400;
-    line-height: 100%;
+    line-height: 180%;
     align-self: stretch;
 }
 
@@ -376,7 +412,8 @@ nav {
     border-radius: 15px;
     padding: 20px;
     max-width: 280px;
-    text-align: center;
+    height: 450px;
+    text-align: left;
 }
 
 .coaches img {
@@ -540,55 +577,7 @@ input[type="file"] {
 
 /* ====== CONTACT PAGE STYLING ====== */
 
-main h2 {
-    color: #FD5901;
-    font-size: 42px;
-    margin-bottom: 10px;
-    text-align: center;
-}
 
-main p {
-    font-size: 20px;
-
-    margin-bottom: 35px;
-    line-height: 1.5;
-}
-
-form {
-
-    max-width: 1000px;
-    margin: 0 auto;
-    padding: 15px;
-}
-
-fieldset {
-    border: 2px solid #FD5901;
-    border-radius: 8px;
-    padding: 18px;
-    margin-bottom: 25px;
-}
-
-legend {
-    color: #FD5901;
-    font-size: 20px;
-    padding: 0 10px;
-}
-
-ul {
-    list-style: none;
-    padding: 0;
-    margin: 0;
-}
-
-ul li {
-    margin-bottom: 18px;
-}
-
-label {
-    display: block;
-    font-size: 17px;
-    margin-bottom: 6px;
-}
 
 input[type="text"],
 input[type="email"],
