@@ -408,8 +408,17 @@ nav {
     max-width: 1000px;
 }
 
-.coaches section {
+.coaches section:nth-child(even) {
     background: #34baba;
+    border-radius: 15px;
+    padding: 20px;
+    max-width: 280px;
+    height: 450px;
+    text-align: left;
+}
+
+.coaches section:nth-child(odd) {
+    background: #1cc2c2;
     border-radius: 15px;
     padding: 20px;
     max-width: 280px;
@@ -699,29 +708,36 @@ textarea {
         width: 50%;
         height: 100%;
     }
+
     .navbar {
         width: auto;
     }
+
     .diet {
         flex-direction: column;
         height: auto;
         width: auto;
         max-width: 700px;
     }
-    .diet p{
+
+    .diet p {
         width: auto;
         height: auto;
     }
-    .diet img{
+
+    .diet img {
         width: 100%;
         height: auto;
     }
+
     .big-btn {
         width: 100%;
     }
-    body{
+
+    body {
         overflow-x: hidden;
     }
+
     .subscription {
         flex-direction: column;
         width: auto;
